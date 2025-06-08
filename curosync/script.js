@@ -66,4 +66,26 @@ document.addEventListener("DOMContentLoaded", () => {
       policeForm.classList.add("was-validated");
     }
   });
+
+  // ---------- Sign-Up Modal logic ----------
+const signUpLink = document.getElementById("signUpLink");
+const signUpForm = document.getElementById("signUpForm");
+
+signUpLink.addEventListener("click", (e) => {
+  e.preventDefault();                     // stop default link jump
+  const signUpModal = new bootstrap.Modal(document.getElementById("signUpModal"));
+  signUpModal.show();
+});
+
+// simple client-side validation
+signUpForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  if (signUpForm.checkValidity()) {
+    alert("Account created successfully!");  
+    bootstrap.Modal.getInstance(document.getElementById("signUpModal")).hide();
+  } else {
+    signUpForm.classList.add("was-validated");
+  }
+});
+
 });
