@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <title>Police_Dashboard</title>
+  </head>
+  <body>
+    <section>
+      <nav class="navbar custom-navbar navbar-expand-lg fixed-top">
+        <div class="container custom-container">
+          <div class="d-flex align-items-center gap-2 mt-3">
+            <img src="logo.png" alt="logo" style="height: 40px" />
+            <h6 class="fw-bold fs-4 custom-text2 m-0">CUROSYNC</h6>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse nav-underline justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link custom-text2 fw-bold" href="#">Emergency</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link position-relative"
+                  href="#"
+                  id="notificationDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="bell.png" height="30" alt="Notifications" />
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  >
+                    5
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="notificationDropdown"
+                  style="width: 300px"
+                >
+                  <li><h6 class="dropdown-header">Notifications</h6></li>
+                  <li>
+                    <a class="dropdown-item text-wrap fs-6" href="#"
+                      >Hit-and-run accident reported near MG Road.</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-wrap fs-6" href="#"
+                      >Vehicle overturned on NH48. No response from inside the car.</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-wrap fs-6" href="#"
+                      >Accident – bike skidded, one injured and bleeding on the road.</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-wrap fs-6" href="#"
+                      >Assaulted, injured and needs immediate police and medical assistance.</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-wrap fs-6" href="#"
+                      >	Suspicious cylinder smell in apartment basement. Risk of fire.</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item text-center text-primary" href="#"
+                      >View all</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+<section class="mt-5">
+      <div class="container mt-5">
+        <div class="card mt-3">
+          <!-- Patient 1 -->
+          <div
+            class="card-header custom-text2 fw-bold d-flex justify-content-between"
+          >
+            <p><img src="bell.png" height="20px" /> Alert</p>
+            <p>New</p>
+          </div>
+          <div
+            class="card-body d-flex justify-content-between align-items-start"
+          >
+            <h5 class="card-title custom-text2 fw-bold">Rahul Verma	</h5>
+            <p class="card-text">
+              Hit-and-run accident reported near MG Road. Victim is unconscious.
+            </p>
+            <a href="#" class="btn custom-btn">View Location</a>
+            <a href="#patient-rahul" class="btn custom-btn">View Details</a>
+          </div>
+          <div class="card-footer text-muted">10 min ago</div>
+        </div>
+        <!-- Patient 2 -->
+        <div class="card mt-3">
+          <div
+            class="card-header custom-text2 fw-bold d-flex justify-content-between"
+          >
+            <p><img src="bell.png" height="20px" /> Alert</p>
+            <p>New</p>
+          </div>
+          <div
+            class="card-body d-flex justify-content-between align-items-center"
+          >
+            <h5 class="card-title custom-text2 fw-bold">Anjali Patil</h5>
+            <p class="card-text">
+              Vehicle overturned on NH48. No response from inside the car.
+            </p>
+            <a href="#" class="btn custom-btn">View Location</a>
+            <a href="#patient-sana" class="btn custom-btn">View Details</a>
+          </div>
+          <div class="card-footer text-muted">46 min ago</div>
+        </div>
+
+        <!-- Patient 3 -->
+        <div class="card mt-3">
+          <div
+            class="card-header custom-text2 fw-bold d-flex justify-content-between"
+          >
+            <p><img src="bell.png" height="20px" /> Alert</p>
+            <p>Visited</p>
+          </div>
+          <div
+            class="card-body d-flex justify-content-between align-items-center"
+          >
+            <h5 class="card-title custom-text2 fw-bold">Priya Tiwari</h5>
+            <p class="card-text">
+	            Accident – bike skidded, one injured and bleeding on the road.            </p>
+            <a href="#" class="btn custom-btn">View Location</a>
+            <a href="#patient-tanya" class="btn custom-btn">View Details</a>
+          </div>
+          <div class="card-footer text-muted">1 hr ago</div>
+        </div>
+
+        <!-- Patient 4 -->
+        <div class="card mt-3">
+          <div
+            class="card-header custom-text2 fw-bold d-flex justify-content-between"
+          >
+            <p><img src="bell.png" height="20px" /> Alert</p>
+            <p>Visited</p>
+          </div>
+          <div
+            class="card-body d-flex justify-content-between align-items-center"
+          >
+            <h5 class="card-title custom-text2 fw-bold">Ramesh Patel</h5>
+            <p class="card-text">
+              Assault case: Person attacked with injuries, needs immediate police and medical aid.
+            </p>
+            <a href="#" class="btn custom-btn">View Location</a>
+            <a href="#patient-aditya" class="btn custom-btn">View Details</a>
+          </div>
+          <div class="card-footer text-muted">1.29 hr ago</div>
+        </div>
+
+        <!-- Patient 5 -->
+        <div class="card mt-3">
+          <div
+            class="card-header custom-text2 fw-bold d-flex justify-content-between"
+          >
+            <p><img src="bell.png" height="20px" /> Alert</p>
+            <p>Visited</p>
+          </div>
+
+          <div
+            class="card-body d-flex justify-content-between align-items-center"
+          >
+            <h5 class="card-title custom-text2 fw-bold">Sohail Khan</h5>
+            <p class="card-text">
+	            Suspicious cylinder smell in apartment basement. Risk of fire.            </p>
+            <a href="#" class="btn custom-btn">View Location</a>
+            <a href="#patient-mitali" class="btn custom-btn">View Details</a>
+          </div>
+          <div class="card-footer text-muted">4 hr ago</div>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>

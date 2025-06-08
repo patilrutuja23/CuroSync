@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Hospital_Dashboard</title>
+  </head>
+  <body>
+    <section>
+      <nav class="navbar custom-navbar navbar-expand-lg fixed-top">
+        <div class="container custom-container">
+          <div class="d-flex align-items-center">
+            <img src="logo.png" alt="logo" style="height: 40px" />
+            <h6 class="fw-bold fs-3 custom-text2 m-0">CUROSYNC</h6>
+          </div>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="collapse navbar-collapse nav-underline justify-content-end"
+            id="navbarNav"
+          >
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link custom-text2 fw-bold" href="#">Emergency</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link position-relative"
+                  href="#"
+                  id="notificationDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img src="bell.png" height="30" alt="Notifications" />
+                  <span
+                    class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                  >
+                    3
+                    <span class="visually-hidden">unread messages</span>
+                  </span>
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="notificationDropdown"
+                  style="width: 300px"
+                >
+                  <li><h6 class="dropdown-header">Notifications</h6></li>
+                  <li>
+                    <a class="dropdown-item text-wrap" href="#"
+                      >Emergency alert from Tanya Sharma</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-wrap" href="#"
+                      >Drug interaction alert for Patient ID: 102</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-wrap" href="#"
+                      >New report submitted by Sana Sheikh</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item text-center text-primary" href="#"
+                      >View all</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section class="mt-5">
+      <div class="container mt-5">
+        <div class="card mt-3">
+          <!-- Patient 1 -->
+          <div
+            class="card-header custom-text2 fw-bold d-flex justify-content-between"
+          >
+            <p><img src="bell.png" height="20px" /> Alert</p>
+            <p>New</p>
+          </div>
+          <div
+            class="card-body d-flex justify-content-between align-items-start"
+          >
+            <h5 class="card-title custom-text2 fw-bold">Aarav Mehta</h5>
+            <p class="card-text">
+              Bitten by a stray dog, needs urgent anti-rabies vaccination.
+            </p>
+            <a href="#" class="btn custom-btn">View Location</a>
+            <a href="#patient-aarav" class="btn custom-btn">View Details</a>
+          </div>
+          <div class="card-footer text-muted">10 min ago</div>
+        </div>
+        <!-- Patient 2 -->
+        <div class="card mt-3">
+          <div
+            class="card-header custom-text2 fw-bold d-flex justify-content-between"
+          >
+            <p><img src="bell.png" height="20px" /> Alert</p>
+            <p>New</p>
+          </div>
+          <div
+            class="card-body d-flex justify-content-between align-items-center"
+          >
+            <h5 class="card-title custom-text2 fw-bold">Sana Sheikh</h5>
+            <p class="card-text">
+              Having seizures and unconsciousness, history of epilepsy.
+            </p>
+            <a href="#" class="btn custom-btn">View Location</a>
+            <a href="#patient-sana" class="btn custom-btn">View Details</a>
+          </div>
+          <div class="card-footer text-muted">46 min ago</div>
+        </div>
+
+        <!-- Patient 3 -->
+        <div class="card mt-3">
+          <div
+            class="card-header custom-text2 fw-bold d-flex justify-content-between"
+          >
+            <p><img src="bell.png" height="20px" /> Alert</p>
+            <p>Visited</p>
+          </div>
+          <div
+            class="card-body d-flex justify-content-between align-items-center"
+          >
+            <h5 class="card-title custom-text2 fw-bold">Tanya Sharma</h5>
+            <p class="card-text">
+              Experiencing chest pain, suspecting a heart attack.
+            </p>
+            <a href="#" class="btn custom-btn">View Location</a>
+            <a href="#patient-tanya" class="btn custom-btn">View Details</a>
+          </div>
+          <div class="card-footer text-muted">1 hr ago</div>
+        </div>
+
+        <!-- Patient 4 -->
+        <div class="card mt-3">
+          <div
+            class="card-header custom-text2 fw-bold d-flex justify-content-between"
+          >
+            <p><img src="bell.png" height="20px" /> Alert</p>
+            <p>Visited</p>
+          </div>
+          <div
+            class="card-body d-flex justify-content-between align-items-center"
+          >
+            <h5 class="card-title custom-text2 fw-bold">Aditya Rao</h5>
+            <p class="card-text">
+              Sudden severe abdominal pain, suspected appendicitis.
+            </p>
+            <a href="#" class="btn custom-btn">View Location</a>
+            <a href="#patient-aditya" class="btn custom-btn">View Details</a>
+          </div>
+          <div class="card-footer text-muted">1.29 hr ago</div>
+        </div>
+
+        <!-- Patient 5 -->
+        <div class="card mt-3">
+          <div
+            class="card-header custom-text2 fw-bold d-flex justify-content-between"
+          >
+            <p><img src="bell.png" height="20px" /> Alert</p>
+            <p>Visited</p>
+          </div>
+
+          <div
+            class="card-body d-flex justify-content-between align-items-center"
+          >
+            <h5 class="card-title custom-text2 fw-bold">Mitali Verma</h5>
+            <p class="card-text">
+              Injured in a road accident, has head trauma and bleeding.
+            </p>
+            <a href="#" class="btn custom-btn">View Location</a>
+            <a href="#patient-mitali" class="btn custom-btn">View Details</a>
+          </div>
+          <div class="card-footer text-muted">4 hr ago</div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container mt-5">
+        <!-- Patient 1 -->
+        <div class="card mt-4" id="patient-aarav">
+          <div class="card shadow">
+            <div class="card-header custom-card1 text-white">
+              <h4 class="mb-0">🚨 Emergency Patient Details</h4>
+            </div>
+            <div class="card-body">
+              <div class="row mb-3">
+                <div class="col-md-6 custom-text2">
+                  <p><strong>Name:</strong> Aarav Mehta</p>
+                  <p><strong>Age:</strong> 34</p>
+                  <p><strong>Gender:</strong> Male</p>
+                  <p><strong>Blood Group:</strong> O+</p>
+                </div>
+                <div class="col-md-6 custom-text2">
+                  <p><strong>Phone:</strong> +91 87654 32109</p>
+                  <p><strong>Emergency Contact:</strong> +91 90001 11223</p>
+                  <p><strong>Allergies:</strong> Penicillin</p>
+                  <p><strong>Insurance ID:</strong> HSPR99800AM</p>
+                </div>
+              </div>
+
+              <div class="alert alert-primary custom-text2">
+                <strong>Current Condition:</strong><br />
+                Bitten by a stray dog on the left leg. Requires immediate
+                anti-rabies vaccination and wound cleaning. Minor bleeding.
+                Admitted to General OPD for urgent immunization.
+              </div>
+
+              <h5 class="fw-bold custom-text2">
+                📝 Medical History (Last 4 Years)
+              </h5>
+              <ul class="list-group history-list custom-text2">
+                <li class="list-group-item">
+                  December 2024 - Diagnosed with seasonal flu and recovered
+                  within 2 weeks
+                </li>
+                <li class="list-group-item">
+                  May 2023 - Hospitalized for dengue fever (platelet monitoring
+                  required)
+                </li>
+                <li class="list-group-item">
+                  November 2022 - Treated for skin infection (topical
+                  antifungal)
+                </li>
+                <li class="list-group-item">
+                  June 2021 - Underwent wisdom tooth extraction (dental surgery)
+                </li>
+              </ul>
+            </div>
+            <div class="card-footer text-end">
+              <button class="btn custom-btn">View Full Medical Records</button>
+              <button class="btn custom-btn">Notify Emergency Contact</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Patient 2 -->
+        <div class="card mt-5" id="patient-sana">
+          <div class="card-header custom-card1 text-white">
+            <h4 class="mb-0">🚨 Emergency Patient Details</h4>
+          </div>
+          <div class="card-body">
+            <div class="row mb-3">
+              <div class="col-md-6 custom-text2">
+                <p><strong>Name:</strong> Sana Sheikh</p>
+                <p><strong>Age:</strong> 26</p>
+                <p><strong>Gender:</strong> Female</p>
+                <p><strong>Blood Group:</strong> A−</p>
+              </div>
+              <div class="col-md-6 custom-text2">
+                <p><strong>Phone:</strong> +91 91234 56789</p>
+                <p><strong>Emergency Contact:</strong> +91 90000 88888</p>
+                <p><strong>Allergies:</strong> None</p>
+                <p><strong>Insurance ID:</strong> MEDSEC88421SS</p>
+              </div>
+            </div>
+
+            <div class="alert alert-primary custom-text2">
+              <strong>Current Condition:</strong><br />
+              Patient was found unconscious and actively seizing. Stabilized
+              with IV diazepam. Known history of epilepsy. Transferred to
+              Neurology ICU for observation.
+            </div>
+
+            <h5 class="fw-bold custom-text2">
+              📝 Medical History (Last 4 Years)
+            </h5>
+            <ul class="list-group history-list custom-text2">
+              <li class="list-group-item">
+                February 2025 - Experienced seizure cluster; admitted for
+                overnight EEG monitoring
+              </li>
+              <li class="list-group-item">
+                September 2023 - MRI conducted due to frequent aura episodes
+              </li>
+              <li class="list-group-item">
+                July 2022 - Switched to levetiracetam due to side effects from
+                previous medication
+              </li>
+              <li class="list-group-item">
+                March 2021 - Initial epilepsy diagnosis after 3 grand mal
+                seizures in one month
+              </li>
+            </ul>
+          </div>
+          <div class="card-footer text-end">
+            <button class="btn custom-btn">View Full Medical Records</button>
+            <button class="btn custom-btn">Notify Emergency Contact</button>
+          </div>
+        </div>
+
+        <!-- Patient 3 -->
+        <div class="card mt-5" id="patient-tanya">
+          <div class="card-header custom-card1 text-white">
+            <h4 class="mb-0">🚨 Emergency Patient Details</h4>
+          </div>
+          <div class="card-body">
+            <div class="row mb-3">
+              <div class="col-md-6 custom-text2">
+                <p><strong>Name:</strong> Tanya Sharma</p>
+                <p><strong>Age:</strong> 51</p>
+                <p><strong>Gender:</strong> Female</p>
+                <p><strong>Blood Group:</strong> B+</p>
+              </div>
+              <div class="col-md-6 custom-text2">
+                <p><strong>Phone:</strong> +91 98123 45678</p>
+                <p><strong>Emergency Contact:</strong> +91 70007 12345</p>
+                <p><strong>Allergies:</strong> None</p>
+                <p><strong>Insurance ID:</strong> CARDIA5201TS</p>
+              </div>
+            </div>
+
+            <div class="alert alert-primary custom-text2">
+              <strong>Current Condition:</strong><br />
+              Patient reports acute chest pain, radiating to the left arm, and
+              shortness of breath. ECG indicates possible myocardial infarction.
+              Administered aspirin. Prepping for angiography.
+            </div>
+
+            <h5 class="fw-bold custom-text2">
+              📝 Medical History (Last 4 Years)
+            </h5>
+            <ul class="list-group history-list custom-text2">
+              <li class="list-group-item">
+                January 2025 - Elevated cholesterol levels; statins prescribed
+              </li>
+              <li class="list-group-item">
+                April 2024 - Complaints of chest discomfort; ECG showed
+                arrhythmia, treated with beta-blockers
+              </li>
+              <li class="list-group-item">
+                October 2022 - Diagnosed with mild hypertension, on regular
+                medication
+              </li>
+              <li class="list-group-item">
+                June 2021 - Annual cardiac screening showed borderline ECG
+                anomalies
+              </li>
+            </ul>
+          </div>
+          <div class="card-footer text-end">
+            <button class="btn custom-btn">View Full Medical Records</button>
+            <button class="btn custom-btn">Notify Emergency Contact</button>
+          </div>
+        </div>
+
+        <!-- Patient 4 -->
+        <div class="card mt-5" id="patient-aditya">
+          <div class="card-header custom-card1 text-white">
+            <h4 class="mb-0">🚨 Emergency Patient Details</h4>
+          </div>
+          <div class="card-body">
+            <div class="row mb-3">
+              <div class="col-md-6 custom-text2">
+                <p><strong>Name:</strong> Aditya Rao</p>
+                <p><strong>Age:</strong> 19</p>
+                <p><strong>Gender:</strong> Male</p>
+                <p><strong>Blood Group:</strong> O+</p>
+              </div>
+              <div class="col-md-6 custom-text2">
+                <p><strong>Phone:</strong> +91 98989 12345</p>
+                <p>
+                  <strong>Emergency Contact:</strong> +91 99220 33445 (Father)
+                </p>
+                <p><strong>Allergies:</strong> Penicillin</p>
+                <p><strong>Insurance ID:</strong> APX-MED40192</p>
+              </div>
+            </div>
+
+            <div class="alert alert-primary custom-text2">
+              <strong>Current Condition:</strong><br />
+              Patient reports sudden and intense pain in the lower right
+              abdomen, with nausea and mild fever. McBurney’s point tenderness
+              present. Suspected acute appendicitis. Awaiting ultrasound
+              confirmation and surgical consult.
+            </div>
+
+            <h5 class="fw-bold custom-text2">
+              📝 Medical History (Last 4 Years)
+            </h5>
+            <ul class="list-group history-list custom-text2">
+              <li class="list-group-item">
+                July 2024 - Hospitalized for food poisoning, responded well to
+                IV fluids
+              </li>
+              <li class="list-group-item">
+                December 2023 - Reported frequent stomach cramps, advised
+                dietary change
+              </li>
+              <li class="list-group-item">
+                August 2022 - Diagnosed with lactose intolerance
+              </li>
+              <li class="list-group-item">
+                April 2021 - Treated for mild gastritis after exam stress period
+              </li>
+            </ul>
+          </div>
+          <div class="card-footer text-end">
+            <button class="btn custom-btn">View Full Medical Records</button>
+            <button class="btn custom-btn">Notify Emergency Contact</button>
+          </div>
+        </div>
+
+        <!-- Patient 5 -->
+        <div class="card mt-5" id="patient-mitali">
+          <div class="card-header custom-card1 text-white">
+            <h4 class="mb-0">🚨 Emergency Patient Details</h4>
+          </div>
+          <div class="card-body">
+            <div class="row mb-3">
+              <div class="col-md-6 custom-text2">
+                <p><strong>Name:</strong> Mitali Verma</p>
+                <p><strong>Age:</strong> 29</p>
+                <p><strong>Gender:</strong> Female</p>
+                <p><strong>Blood Group:</strong> B+</p>
+              </div>
+              <div class="col-md-6 custom-text2">
+                <p><strong>Phone:</strong> +91 98765 43210</p>
+                <p><strong>Emergency Contact:</strong> +91 90210 11121</p>
+                <p><strong>Allergies:</strong> None</p>
+                <p><strong>Insurance ID:</strong> HSPX239001VER</p>
+              </div>
+            </div>
+
+            <div class="alert alert-primary custom-text2">
+              <strong>Current Condition:</strong><br />
+              Injured in a road accident with head trauma and visible bleeding.
+              Unconscious at the scene. Transported by ambulance. Admitted to
+              Emergency Ward - Trauma Unit 3.
+            </div>
+
+            <h5 class="fw-bold custom-text2">
+              📝 Medical History (Last 4 Years)
+            </h5>
+            <ul class="list-group history-list custom-text2">
+              <li class="list-group-item">
+                April 2025 - Hospitalized for severe migraine and nausea
+                (Neurology Department)
+              </li>
+              <li class="list-group-item">
+                October 2024 - Treated for mild depression and anxiety
+                (Counseling & Mental Health)
+              </li>
+              <li class="list-group-item">
+                March 2023 - Diagnosed with Vitamin D deficiency, on supplements
+              </li>
+              <li class="list-group-item">
+                August 2022 - Minor leg fracture due to staircase fall,
+                recovered completely
+              </li>
+            </ul>
+          </div>
+          <div class="card-footer text-end">
+            <button class="btn custom-btn">View Full Medical Records</button>
+            <button class="btn custom-btn">Notify Emergency Contact</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
