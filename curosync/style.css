@@ -1,5 +1,6 @@
 body {
-    background-color: #A1E3F9 !important;
+    /* background-color: #A1E3F9 !important; */
+    background: linear-gradient(to right, #A1E3F9, #6ECEDA, #4098D7);
 }
 
 #screen2,
@@ -8,7 +9,8 @@ body {
   display: none;
 }
 .custom-container {
-    background-color: #A1E3F9 !important;
+    /* background-color: #A1E3F9 !important; */
+    background: linear-gradient(to right, #A1E3F9, #6ECEDA, #4098D7);
 }
 
 .custom-card {
@@ -38,8 +40,18 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.custom-text3 {
+    /* color: linear-gradient(to right, #A1E3F9, #D0F0FF) ; */
+    color: #D1F8EF !important;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.custom-text3:hover{
+    /* color: linear-gradient(to right, #A1E3F9, #D0F0FF) ; */
+    color: #1f3a6e !important;
+}
+
 .custom-btn {
-    background-color: #578FCA !important; 
+    background-color: #4098D7 !important; 
     color: #D1F8EF !important; 
     border: none !important;
     padding: 10px 20px !important;
@@ -54,7 +66,15 @@ body {
     color: #578FCA !important; 
 }
 
+.custom-img {
+    transition: filter 0.3s ease;
+}
 
+.custom-img:hover{
+    transition: filter 0.3s ease;
+    filter: brightness(0.7);
+    cursor: pointer;
+}
 
 
 /* Instagram-style card */
